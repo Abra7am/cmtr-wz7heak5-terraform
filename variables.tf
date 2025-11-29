@@ -1,34 +1,29 @@
-variable "profile" {
-  description = "AWS CLI profile used for authentication"
-  type        = string
-}
-
 variable "region" {
-  description = "AWS region where resources will be created"
+  description = "AWS region for deployment"
   type        = string
 }
 
 variable "base_name" {
-  description = "Base prefix for all resource names"
+  description = "Base prefix for naming AWS resources"
   type        = string
 }
 
 variable "vpc_cidr" {
-  description = "CIDR block for the VPC"
+  description = "CIDR block of the VPC"
   type        = string
 }
 
 variable "public_subnet_a_cidr" {
-  description = "CIDR block for public subnet in availability zone us-east-1a"
+  description = "CIDR for public subnet in us-east-1a"
   type        = string
 }
 
 variable "public_subnet_b_cidr" {
-  description = "CIDR block for public subnet in availability zone us-east-1b"
+  description = "CIDR for public subnet in us-east-1b"
   type        = string
 }
 
 variable "public_subnet_c_cidr" {
-  description = "CIDR block for public subnet in availability zone us-east-1c"
+  description = "CIDR for public subnet in us-east-1c"
   type        = string
 }
