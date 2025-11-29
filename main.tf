@@ -1,3 +1,6 @@
 provider "aws" {
-  region = var.region
+  region                   = "us-east-1"
+  shared_credentials_files = ["~/.aws/credentials"]
+  profile                  = "abra-devops"
 }
+
