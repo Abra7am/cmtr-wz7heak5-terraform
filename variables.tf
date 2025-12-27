@@ -1,21 +1,29 @@
-variable "ssh_key" {
-  description = "Provides custom public SSH key."
-  type        = string
-
-}
-
-variable "vpc_id" {
-  description = "The ID of the existing VPC to use."
+variable "aws_region" {
+  description = "AWS region for all resources"
   type        = string
 }
 
-variable "subnet_id_public_a" {
-  description = "The ID of the public subnet in AZ us-east-1a."
+variable "project_name" {
+  description = "Project identifier"
   type        = string
 }
 
-variable "s3_bucket_name" {
-  description = "Name of the S3 bucket for the project"
+variable "vpc_cidr" {
+  description = "CIDR block for the VPC"
   type        = string
-  default     = "cmtr-wz7heak5-bucket-1766833216"
+}
+
+variable "subnet_public_a_cidr" {
+  description = "CIDR for public subnet A"
+  type        = string
+}
+
+variable "subnet_public_b_cidr" {
+  description = "CIDR for public subnet B"
+  type        = string
+}
+
+variable "subnet_public_c_cidr" {
+  description = "CIDR for public subnet C"
+  type        = string
 }
