@@ -47,3 +47,8 @@ variable "s3_bucket_name" {
   description = "Name of the S3 bucket"
   type        = string
 }
+
+variable "enable_ec2" {
+  description = "Whether to create EC2 and SSH resources"
+  type        = bool
+}

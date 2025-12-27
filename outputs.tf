@@ -13,6 +13,10 @@ output "public_subnet_ids" {
 }
 
 output "instance_public_ip" {
-  description = "Public IP address of the EC2 instance"
-  value       = aws_instance.cmtr_wz7heak5_ec2.public_ip
+  description = "Public IP address of the EC2 instance (if created)"
+  value = (
+    var.enable_ec2
+    ? aws_instance.cmtr_wz7heak5_ec2[0].public_ip
+    : null
+  )
 }
