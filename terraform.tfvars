@@ -18,10 +18,10 @@ allowed_ip_range = [
   "104.28.216.174/32"
 ]
 
-vpc_id            = "vpc-0badb5ca4856344d2"
-public_subnet_id  = "subnet-0584ea6de6707d2e1"
-private_subnet_id = "subnet-0a1abc19fd6cfe595"
+vpc_id            = "vpc-0c1f7d0168b668df1"
+public_subnet_id  = "subnet-04781955ac4f856ad"
+private_subnet_id = "subnet-0a48ca13d62f78486"
 
-public_instance_id  = "i-0b4fd98b5938fdd52"
-private_instance_id = "i-0a899d084d80508d8"
+public_instance_id  = "i-02fe12385aeaa6c33"
+private_instance_id = "i-028c9224b1a695cf4"
 
