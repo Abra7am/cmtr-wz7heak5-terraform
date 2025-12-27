@@ -28,6 +28,12 @@ variable "subnet_public_c_cidr" {
   type        = string
 }
 
+variable "enable_ec2" {
+  description = "Whether to create EC2 and SSH resources"
+  type        = bool
+}
+
+
 variable "ssh_key" {
   description = "Provides custom public SSH key."
   type        = string
@@ -54,7 +60,3 @@ variable "s3_bucket_name" {
   type        = string
 }
 
-variable "enable_ec2" {
-  description = "Whether to create EC2 and SSH resources"
-  type        = bool
-}
