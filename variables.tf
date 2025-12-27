@@ -60,3 +60,33 @@ variable "iam_s3_bucket_name" {
   description = "S3 bucket name used in IAM policy"
   type        = string
 }
+
+variable "allowed_ip_range" {
+  description = "List of allowed IP ranges for secure access"
+  type        = list(string)
+}
+
+variable "vpc_id" {
+  description = "VPC ID provided by the platform"
+  type        = string
+}
+
+variable "public_instance_id" {
+  description = "Public EC2 instance ID"
+  type        = string
+}
+
+variable "private_instance_id" {
+  description = "Private EC2 instance ID"
+  type        = string
+}
+
+variable "public_subnet_id" {
+  description = "Public subnet ID"
+  type        = string
+}
+
+variable "private_subnet_id" {
+  description = "Private subnet ID"
+  type        = string
+}
