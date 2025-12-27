@@ -11,3 +11,8 @@ output "public_subnet_ids" {
     aws_subnet.public_c.id
   ]
 }
+
+output "instance_public_ip" {
+  description = "Public IP address of the EC2 instance"
+  value       = aws_instance.cmtr_wz7heak5_ec2.public_ip
+}
