@@ -31,6 +31,12 @@ variable "subnet_public_c_cidr" {
 variable "ssh_key" {
   description = "Provides custom public SSH key."
   type        = string
+  default     = null
+
+  validation {
+    condition     = var.enable_ec2 == false || var.ssh_key != null
+    error_message = "ssh_key must be provided when enable_ec2 is true."
+  }
 }
 
 variable "instance_type" {
